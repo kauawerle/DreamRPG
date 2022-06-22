@@ -1,0 +1,28 @@
+import { IonText, useIonRouter } from '@ionic/react';
+import { Button, Container, Logo, LogoBox, Text } from './style';
+
+const Home: React.FC = () => {
+  const router = useIonRouter();
+
+
+  const handleNavigateListPerso = () => {
+    router.push('/home', 'forward', 'push')
+  }
+
+  return (
+    <Container> 
+    <LogoBox>
+      <Logo src={'assets/logo/Logo.png'} />
+    </LogoBox>
+    
+    <Button onClick={() => {handleNavigateListPerso()}}>
+      <Text>Personagens</Text>
+    </Button>
+    <Button>
+      <Text>Criar Personagem</Text>
+    </Button>
+  </Container>
+  );
+};
+
+export default Home;

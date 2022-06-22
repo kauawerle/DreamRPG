@@ -145,6 +145,10 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+    --ion-color-default-theme: #312E38;
+    --ion-color-second-default-theme: #FF9000;
+    --ion-color-activate-default-theme: #d27c0c;
   }
 
   /*
