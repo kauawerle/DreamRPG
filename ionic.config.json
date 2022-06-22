@@ -1,0 +1,7 @@
+{
+  "name": "Dream RPG",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
