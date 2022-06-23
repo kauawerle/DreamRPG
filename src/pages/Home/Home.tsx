@@ -9,6 +9,10 @@ const Home: React.FC = () => {
     router.push('/home', 'forward', 'push')
   }
 
+	const handleNavigateCreate = () => {
+    router.push('/create', 'forward', 'push')
+  }
+
   return (
     <Container> 
     <LogoBox>
@@ -18,7 +22,7 @@ const Home: React.FC = () => {
     <Button onClick={() => {handleNavigateListPerso()}}>
       <Text>Personagens</Text>
     </Button>
-    <Button>
+    <Button onClick={() => {handleNavigateCreate()}}>
       <Text>Criar Personagem</Text>
     </Button>
   </Container>
