@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "Dream RPG",
-	"webDir": "build",
-	"bundledWebRuntime": false
+  "appId": "com.domain.app",
+  "appName": "dream-rpg",
+  "webDir": "build",
+  "bundledWebRuntime": false
 }

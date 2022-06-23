@@ -1,4 +1,4 @@
-import { IonPage, IonText, IonImg, IonContent, IonItem, IonButton } from '@ionic/react';
+import { IonPage, IonText, IonImg, IonContent, IonItem, IonButton, IonInput } from '@ionic/react';
 import styled from 'styled-components';
 
 export const Container = styled(IonPage)`
@@ -26,3 +26,7 @@ export const LogoBox = styled(IonItem)`
 export const Logo = styled(IonImg)`
     width: 100%;
 `;
+
+export const SendImage = styled(IonInput)`
+
+`
