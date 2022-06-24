@@ -11,22 +11,29 @@ export const Container = styled(IonPage)`
 
 `;
 
-export const LogoBox = styled(IonItem)`
+export const LogoBox = styled.div`
     --background: var(--ion-color-default-theme);
+		--inner-border-width: 0;
+    --inner-padding-end: 0;
+		top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     border: none;
-    margin: 84px 0;
-    --inner-border-width: 0;
-    --inner-padding-end: 0;
 `;
 
 export const Logo = styled(IonImg)`
     width: 100%;
 `;
 
-export const SendImage = styled(IonInput)`
+export const SendBox = styled.div`
+    --background: var(--ion-color-default-theme);
+
+    width: 100%;
+	/* height: 40%; */
+    border: none;
+    --inner-border-width: 0;
+    --inner-padding: 0;
 
 `
