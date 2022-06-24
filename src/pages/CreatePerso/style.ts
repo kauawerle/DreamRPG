@@ -46,7 +46,6 @@ export const SendImage = styled(IonButton)`
 	position: absolute;
 	width: 160.98px;
 	height: 160.98px;
-	left: 120px;
 	top: 242px;
 	border-radius: 4px;
 `;

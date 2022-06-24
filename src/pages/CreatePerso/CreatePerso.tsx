@@ -18,11 +18,6 @@ const CreatePerso: React.FC = () => {
 		(document as any).getElementById("ImageBox").appendChild("<h1> hello</h1>");
 	}
 
-	const handleNavigateHome = () => {
-    router.push('/home', 'forward', 'push')
-  }
-
-
 	return (
 		<>
 			<HeaderComponent/>

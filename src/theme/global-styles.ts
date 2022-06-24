@@ -29,9 +29,11 @@ export const Logo = styled(IonImg)`
 
 export const SendBox = styled.div`
     --background: var(--ion-color-default-theme);
-
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
     width: 100%;
-	/* height: 40%; */
     border: none;
     --inner-border-width: 0;
     --inner-padding: 0;
