@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   return (
     <Container> 
     <LogoBox>
-      <Logo src={'assets/logo/Logo.png'} />      
+      <Logo src={'assets/logo/logo.png'} />      
     </LogoBox>
     
     <Button onClick={() => {handleNavigateListPerso()}}>
