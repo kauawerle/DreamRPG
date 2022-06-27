@@ -49,3 +49,14 @@ export const SendImage = styled(IonButton)`
 	top: 242px;
 	border-radius: 4px;
 `;
+
+
+export const Form = styled.div`
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`; 
+
+
+

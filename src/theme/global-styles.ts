@@ -1,4 +1,4 @@
-import { IonPage, IonText, IonImg, IonContent, IonItem, IonButton, IonInput } from '@ionic/react';
+import { IonPage, IonText, IonImg, IonContent, IonItem, IonButton, IonInput, IonSelect } from '@ionic/react';
 import styled from 'styled-components';
 
 export const Container = styled(IonPage)`
@@ -39,3 +39,25 @@ export const SendBox = styled.div`
     --inner-padding: 0;
 
 `
+
+
+export const InputGeneric = styled.input`
+	position: absolute;
+	width: 60%;
+	height: 47.66px;
+	top: 581px;
+	background: #423F4D;
+	outline: 0;
+	font-size: 20px;
+	font-family: 'Rajdhani';
+	text-align: center;
+`;
+
+export const Select = styled(IonSelect)`
+	position: absolute;
+	width: 60%;
+	height: 47.66px;
+	top: 448.52px;
+
+	background: #423F4D;
+`;

@@ -1,8 +1,10 @@
-import { IonIcon, useIonRouter } from '@ionic/react';
-import { Container, Logo, SendBox } from '../../theme/global-styles';
-import { Button, Header, InputImage, LogoBox, SendImage } from './style';
-import { imagesOutline, arrowBack } from 'ionicons/icons';
+import { IonIcon, IonSelectOption, useIonRouter } from '@ionic/react';
+import { Container, InputGeneric, Logo, Select, SendBox } from '../../theme/global-styles';
 import HeaderComponent from '../../components/header/Header';
+
+
+import { InputImage, LogoBox, SendImage, Form } from './style';
+import { imagesOutline } from 'ionicons/icons';
 
 const CreatePerso: React.FC = () => {
 	const router = useIonRouter();
@@ -15,7 +17,6 @@ const CreatePerso: React.FC = () => {
 	const setImage = (_event: any) => {
 		let f = _event.target.files![0];
 		console.log(f);
-		(document as any).getElementById("ImageBox").appendChild("<h1> hello</h1>");
 	}
 
 	return (
@@ -31,6 +32,27 @@ const CreatePerso: React.FC = () => {
 					</SendImage>
 				</SendBox>
 				<InputImage onChange={setImage} id={"file-upload"} style={{ display: "none" }} type="file" />
+				<Form>
+					<Select style={{ fontSize: "20px", fontFamily: "Rajdhani"}} interface="popover" placeholder="Raça">
+						<IonSelectOption value="Humano">Raça</IonSelectOption>
+					</Select>
+					<Select 
+						style={{ 
+							fontSize: "20px", 
+							fontFamily: "Rajdhani",
+							position: "absolute",
+							height: "47.66px",
+							top: "515.25px",
+
+						}} 
+						interface="popover"
+						placeholder="Classe">
+						<IonSelectOption value="Humano">Humano</IonSelectOption>
+					</Select>
+					<InputGeneric placeholder="Armas" style={{border: 'none'}}></InputGeneric>
+
+				</Form>
+
 			</Container>
 		</>
 	);
