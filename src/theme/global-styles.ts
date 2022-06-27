@@ -37,6 +37,8 @@ export const SendBox = styled.div`
     border: none;
     --inner-border-width: 0;
     --inner-padding: 0;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+
 
 `
 
@@ -51,6 +53,7 @@ export const InputGeneric = styled.input`
 	font-size: 20px;
 	font-family: 'Rajdhani';
 	text-align: center;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 `;
 
 export const Select = styled(IonSelect)`
@@ -58,6 +61,6 @@ export const Select = styled(IonSelect)`
 	width: 60%;
 	height: 47.66px;
 	top: 448.52px;
-
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 	background: #423F4D;
 `;
