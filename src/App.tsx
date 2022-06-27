@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { SplashScreen } from '@capacitor/splash-screen';
 import Start from './pages/Start/Start';
 
 /* Core CSS required for Ionic components to work properly */
@@ -23,11 +24,18 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Home from './pages/Home/Home';
 import CreatePerso from './pages/CreatePerso/CreatePerso';
+import { URL } from 'url';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
+
+const App: React.FC = () => {
+	SplashScreen.show({
+		showDuration: 4000,
+		autoHide: true,
+	})
+	return (
+		<IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/start">
@@ -45,6 +53,8 @@ const App: React.FC = () => (
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
-);
+	)
+  
+};
 
 export default App;
