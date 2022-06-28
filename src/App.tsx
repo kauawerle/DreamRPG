@@ -24,16 +24,15 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Home from './pages/Home/Home';
 import CreatePerso from './pages/CreatePerso/CreatePerso';
-import { URL } from 'url';
 
 setupIonicReact();
 
-
 const App: React.FC = () => {
 	SplashScreen.show({
-		showDuration: 4000,
-		autoHide: true,
-	})
+		showDuration: 2000,
+		autoHide: true
+	});
+
 	return (
 		<IonApp>
     <IonReactRouter>
