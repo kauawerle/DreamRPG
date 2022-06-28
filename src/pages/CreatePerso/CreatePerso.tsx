@@ -29,10 +29,11 @@ const CreatePerso: React.FC = () => {
 					</SendImage>
 				</SendBox>
 				<IonRow onClick={() => takePhoto()} style={{position: "absolute",
-					width: "160.98px",
+					width: "170.98px",
 					height: "160.98px",
-					left: "107.13px",
+					left: "88.13px",
 					top: "242px",
+					borderRadius: "20px"
 					}}>
 					{photos.map((photo, index) => (
 						<IonCol size="16" key={index}>
