@@ -36,7 +36,7 @@ const CreatePerso: React.FC = () => {
 					borderRadius: "20px"
 					}}>
 					{photos.map((photo, index) => (
-						<IonCol size="16" key={index}>
+						<IonCol style={{width: "100px"}} size="14" key={index}>
 							<IonImg src={photo.webviewPath} />
 						</IonCol>
 					))}
