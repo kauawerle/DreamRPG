@@ -38,7 +38,6 @@ export function usePhotoGallery() {
 					path: photo.filepath,
 					directory: Directory.Data,
 				});
-				// Web platform only: Load the photo as base64 data
 				photo.webviewPath = `data:image/jpeg;base64,${file.data}`;
 			}
 			setPhotos(photosInStorage);
@@ -59,7 +58,6 @@ export function usePhotoGallery() {
 		setPhotos(newPhotos);
 		Storage.set({ key: PHOTO_STORAGE, value: JSON.stringify(newPhotos) });
 	};
-
 
 	return {
 		photos,
