@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 
 
   const handleNavigateListPerso = () => {
-    router.push('/home', 'forward', 'push')
+    router.push('/list', 'forward', 'push')
   }
 
 	const handleNavigateCreate = () => {

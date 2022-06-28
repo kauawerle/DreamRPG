@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Home from './pages/Home/Home';
 import CreatePerso from './pages/CreatePerso/CreatePerso';
+import ListPerso from './pages/ListPerso/ListPerso';
 
 setupIonicReact();
 
@@ -45,6 +46,9 @@ const App: React.FC = () => {
         </Route>
 				<Route exact path="/create">
           <CreatePerso/>
+        </Route>
+				<Route exact path="/list">
+          <ListPerso/>
         </Route>
         <Route exact path="/">
           <Redirect to="/start" />
