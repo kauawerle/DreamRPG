@@ -12,6 +12,8 @@ const ListPerso: React.FC = () => {
 				<LogoBox>
 					<Logo src={'assets/logo/Logo.png'} />
 				</LogoBox>
+
+				
 			</Container>
 
 		</>

@@ -11,10 +11,10 @@ export const Header = styled.div`
 `;
 
 
-export const LogoBox = styled(IonItem)`
+export const LogoBox = styled.div`
     --background: var(--ion-color-default-theme);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 30%;
     border: none;
@@ -23,14 +23,6 @@ export const LogoBox = styled(IonItem)`
     --inner-padding-end: 0;
 `;
 
-export const InputImage = styled.input`
-	position: absolute;
-	width: 160.98px;
-	height: 160.98px;
-	left: 107.13px;
-	top: 242px;
-
-`;
 
 export const Button = styled(IonButton)`
     --background: var(--ion-color-default-theme);
@@ -40,15 +32,7 @@ export const Button = styled(IonButton)`
 
 `;
 
-export const SendImage = styled(IonButton)`
-	--background: var(--ion-color-second-theme);
-	--background-activated: var(--ion-color-default-theme, #423F4D);
-	position: absolute;
-	width: 160.98px;
-	height: 160.98px;
-	top: 242px;
-	border-radius: 4px;
-`;
+
 
 
 export const Form = styled.div`
@@ -58,5 +42,9 @@ export const Form = styled.div`
 	align-items: center;
 `; 
 
+export const ContentButton = styled.div`
+	display: flex;
+	margin-top: 50px;
+`;
 
 
