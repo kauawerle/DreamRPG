@@ -8,8 +8,7 @@ margin-top: 50px;
 `;
 
 export const SendBox = styled.div`
-    --background: var(--ion-color-default-theme);
-	
+    /* --background: var(--ion-color-default-theme); */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -17,7 +16,7 @@ export const SendBox = styled.div`
     border: none;
     --inner-border-width: 0;
     --inner-padding: 0;
-	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 `
 
 export const SendImage = styled(IonButton)`
