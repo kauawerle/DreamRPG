@@ -1,6 +1,7 @@
 import { IonSelectOption } from "@ionic/react";
 import { Virtuoso } from "react-virtuoso";
 import ContentButtonComponent from "../ContentButton/ContentButton";
+import ShieldComponent from "../ShieldComponent/Shield";
 import { Form, InputGeneric, Select, SelectBox } from "./style";
 
 const FormComponent: React.FC = () => {
@@ -34,6 +35,7 @@ const FormComponent: React.FC = () => {
 							<InputGeneric placeholder="descrição" style={{height: '90px', border: 'none' }}></InputGeneric>
 							<InputGeneric placeholder="Poderes/Magias" style={{ height: '90px', border: 'none' }}></InputGeneric>
 							<InputGeneric placeholder="Pontos de vida" style={{ height: '90px', border: 'none' }}></InputGeneric>
+
 						</Form>
 
 					</>
