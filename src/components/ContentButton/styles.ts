@@ -27,6 +27,8 @@ export const SendImage = styled(IonButton)`
 	height: 160.98px;
 	margin-top: 20px;
 	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+
 `;
 
 export const InputImage = styled.input`

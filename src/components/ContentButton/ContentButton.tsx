@@ -13,7 +13,7 @@ const ContentButtonComponent: React.FC = () => {
 	}
 
 	return (
-		<ContentButton>
+		<ContentButton >
 			<SendBox>
 				<SendImage onClick={() => takePhoto()}>
 					<IonIcon style={{ fontSize: "80px" }} icon={imagesOutline} />
