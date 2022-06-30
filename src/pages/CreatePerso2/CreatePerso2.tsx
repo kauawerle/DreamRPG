@@ -6,11 +6,11 @@ import { Button, ContentButton } from './style';
 import { IonIcon, useIonRouter } from '@ionic/react';
 import { arrowDown, arrowForwardCircle } from 'ionicons/icons';
 
-const CreatePerso: React.FC = () => {
+const CreatePerso2: React.FC = () => {
 	const router = useIonRouter();
 
 	const handleNavigateHome = () => {
-		router.push('/create2', 'forward', 'replace')
+		router.push('/home', 'forward', 'push')
 	}
 
 	return (
@@ -18,12 +18,7 @@ const CreatePerso: React.FC = () => {
 			<HeaderComponent />
 			<Container style={{ marginTop: '50px' }} >
 				<LogoComponent />
-				<FormComponent />
-				<ContentButton>
-					<Button onClick={() => { handleNavigateHome() }}>
-						<IonIcon style={{ fontSize: "35px" }} icon={arrowForwardCircle} />
-					</Button>
-				</ContentButton>
+				
 			</Container>
 
 		</>
@@ -31,4 +26,4 @@ const CreatePerso: React.FC = () => {
 }
 
 
-export default CreatePerso;
+export default CreatePerso2;

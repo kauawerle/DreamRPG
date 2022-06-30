@@ -2,7 +2,12 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { SplashScreen } from '@capacitor/splash-screen';
+
+// Routes
 import Start from './pages/Start/Start';
+import Home from './pages/Home/Home';
+import CreatePerso from './pages/CreatePerso/CreatePerso';
+import ListPerso from './pages/ListPerso/ListPerso';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,8 +27,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Home from './pages/Home/Home';
-import CreatePerso from './pages/CreatePerso/CreatePerso';
+import CreatePerso2 from './pages/CreatePerso2/CreatePerso2';
 
 setupIonicReact();
 
@@ -45,6 +49,12 @@ const App: React.FC = () => {
         </Route>
 				<Route exact path="/create">
           <CreatePerso/>
+        </Route>
+				<Route exact path="/create2">
+          <CreatePerso2/>
+        </Route>
+				<Route exact path="/list">
+          <ListPerso/>
         </Route>
         <Route exact path="/">
           <Redirect to="/start" />
