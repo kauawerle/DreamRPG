@@ -1,6 +1,4 @@
-import { IonIcon, IonImg } from "@ionic/react";
-import { Logo, LogoBox } from "../LogoBox/styles";
-import shield from './aaa.svg'
+import ShieldComponent from "../ShieldComponent/Shield";
 import { CalcBox, Container, InputSkill } from "./style";
 
 const SkillComponent: React.FC = () => {
@@ -13,6 +11,7 @@ const SkillComponent: React.FC = () => {
 			<InputSkill placeholder="Inteligência" type="number"></InputSkill>
 			<InputSkill placeholder="Sabedoria" type="number"></InputSkill>
 			<InputSkill placeholder="Carisma" type="number"></InputSkill>
+			<ShieldComponent/>
 		</Container>
 	);
 };

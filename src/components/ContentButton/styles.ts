@@ -1,4 +1,4 @@
-import { IonButton } from "@ionic/react";
+import { IonButton, IonImg } from "@ionic/react";
 import styled from "styled-components";
 
 
@@ -8,7 +8,6 @@ margin-top: 50px;
 `;
 
 export const SendBox = styled.div`
-    /* --background: var(--ion-color-default-theme); */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -35,4 +34,21 @@ export const InputImage = styled.input`
 	width: 160.98px;
 	height: 160.98px;
 
+`;
+
+export const ImageCamera = styled(IonImg)`
+	position: absolute;
+	width: 180px;
+	height: 180px ;
+	top: 0;
+	margin-top: -80px;
+`;
+
+export const ContentImg = styled.div`
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
 `;

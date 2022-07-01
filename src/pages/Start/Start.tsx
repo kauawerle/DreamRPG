@@ -12,7 +12,7 @@ const Start: React.FC = () => {
   return (
     <Container>
       <LogoBox>
-        <Logo src={'assets/logo/logo.png'} />
+        <Logo src={'assets/logo/Logo.png'} />
       </LogoBox>
       <Text>Aplicativo gratuito para criar sua ficha de rpg</Text>
 

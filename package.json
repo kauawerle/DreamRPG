@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor-community/media": "^3.0.0",
     "@capacitor-community/react-hooks": "0.0.11",
     "@capacitor/android": "3.6.0",
     "@capacitor/app": "1.1.1",

@@ -1,16 +1,13 @@
 import { IonCol, IonIcon, IonImg, IonRow, useIonRouter } from "@ionic/react";
 import {  imagesOutline } from "ionicons/icons";
 import { usePhotoGallery } from "../../hooks/usePhotoGallery";
-import { ContentButton, InputImage, SendBox, SendImage } from "./styles";
+import { ContentButton, ContentImg, ImageCamera, InputImage, SendBox, SendImage } from "./styles";
 
 const ContentButtonComponent: React.FC = () => {
 
 	const { photos, takePhoto } = usePhotoGallery();
 
-	const setImage = (_event: any) => {
-		let f = _event.target.files![0];
-		console.log(f);
-	}
+
 
 	return (
 		<ContentButton >
@@ -23,12 +20,14 @@ const ContentButtonComponent: React.FC = () => {
 				borderRadius: "20px"
 			}}>
 				{photos.map((photo, index) => (
-					<IonCol style={{ width: "100px" }} size="14" key={index}>
-						<IonImg src={photo.webviewPath} />
+					<IonCol style={{ display: "flex",align: "center", justifyContent: "center", width: "100px", borderRadius: "20px" }} size="14" key={index}>
+					<ContentImg>
+						<ImageCamera style={{borderRadius: "20px"}} src={photo.webviewPath} />
+					</ContentImg>
 					</IonCol>
 				))}
 			</IonRow>
-			<InputImage onChange={setImage} id={"file-upload"} style={{ display: "none" }} type="file" />
+			<InputImage id={"file-upload"} style={{ display: "none", borderRadius: "20px" }} type="file" />
 		</ContentButton>
 	);
 };

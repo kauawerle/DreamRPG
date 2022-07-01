@@ -13,15 +13,26 @@ export const ShieldBox = styled.div`
     width: 50%;
     border: none;
 		margin-bottom: 40px;
+		height: 98px;
+
+	
+
 `;
 
+export const ShieldContent = styled.div`
+		width: 30%;
+		position: absolute;
+    left: 30px;
+    z-index: -1;
+`
+
 export const Shield = styled(IonIcon)`
-    width: 100%;
+    width: 50%;
 `;
 
 export const Input = styled(IonInput)`
+	margin: 20px;
 	width: 100%;
 	height: 40px;
-	font-size: 20px;
-
+	font-size: 18px;
 `;
