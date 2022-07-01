@@ -5,6 +5,7 @@ import FormComponent from '../../components/FormComponent/FormComponent';
 import { Button, ContentButton } from './style';
 import { IonIcon, useIonRouter } from '@ionic/react';
 import { arrowDown, arrowForwardCircle } from 'ionicons/icons';
+import SkillComponent from '../../components/SkillsComponent/SkillsComponent';
 
 const CreatePerso2: React.FC = () => {
 	const router = useIonRouter();
@@ -18,7 +19,7 @@ const CreatePerso2: React.FC = () => {
 			<HeaderComponent />
 			<Container style={{ marginTop: '50px' }} >
 				<LogoComponent />
-				
+				<SkillComponent/>
 			</Container>
 
 		</>

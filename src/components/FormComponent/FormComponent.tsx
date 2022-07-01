@@ -35,9 +35,7 @@ const FormComponent: React.FC = () => {
 							<InputGeneric placeholder="descrição" style={{height: '90px', border: 'none' }}></InputGeneric>
 							<InputGeneric placeholder="Poderes/Magias" style={{ height: '90px', border: 'none' }}></InputGeneric>
 							<InputGeneric placeholder="Pontos de vida" style={{ height: '90px', border: 'none' }}></InputGeneric>
-
 						</Form>
-
 					</>
 				);
 			}}

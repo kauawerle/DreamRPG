@@ -3,7 +3,6 @@ import { isPlatform } from '@ionic/react';
 import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
 import { Filesystem, Directory } from '@capacitor/filesystem';
 import { Storage } from '@capacitor/storage';
-import { Capacitor } from '@capacitor/core';
 
 export interface UserPhoto {
 	filepath: string;
@@ -49,6 +48,7 @@ export function usePhotoGallery() {
 		const photo = await Camera.getPhoto({
 			resultType: CameraResultType.Uri,
 			source: CameraSource.Camera,
+			saveToGallery: true,
 			quality: 100,
 		});
 
