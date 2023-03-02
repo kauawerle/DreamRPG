@@ -4,17 +4,17 @@ import { v4 } from "uuid";
 import { UserModel } from "../../database/model/tb_user";
 
 class UserController {
-    async findAll(req: Request, res: Response) {
-        try {
-            const users = await UserModel.findAll();
-            res.json(users);
-        }
-        catch (err) {
-            return res.status(500).json(err);
-        }
-    }
+	async findAll(req: Request, res: Response) {
+		try {
+			const users = await UserModel.findAll();
+			res.json(users);
+		}
+		catch (err) {
+			return res.status(500).json(err);
+		}
+	}
 
-    async create(req: Request, res: Response) {
+	async create(req: Request, res: Response) {
 		try {
 			const {
 				name,
@@ -36,7 +36,7 @@ class UserController {
 			return res.status(500).json(err);
 		}
 	}
-  
+
 	async findByEmail(req: Request, res: Response, next: NextFunction) {
 		try {
 			const { email, password } = req.query;
